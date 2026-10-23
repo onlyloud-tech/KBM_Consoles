@@ -1,0 +1,24 @@
+KnoxBox Consoles — source links
+
+These upstream links identify the source revisions for bundled GPL-covered
+titles. Matching corresponding-source archives are also included in this
+LICENSES directory. See THIRD-PARTY-NOTICES.md and each NES title's NOTICE.md
+for license terms and ROM hashes.
+
+Game Boy / Game Boy Color
+AIRPLANZ: https://github.com/NotImplementedLife/AIRPLANZ/tree/9ed9843750a2b1ee8b160fc17ebe16c6e51435f0
+Big2Small: https://github.com/mdsteele/big2small/tree/1204d57975a086322cae31805a0f476d9af82384
+Bit Bang: https://github.com/StudioGuma/bit_bang/tree/c3ec05d47fc187667fb2bd5251bf465dabd7705e
+Geometrix: https://github.com/AntonioND/geometrix/tree/8f5467ec225e21d67b2e6621eabede70dc6cc8fa
+
+NES
+HalfNES emulator: https://github.com/andrew-hoffman/halfnes
+240p Test Suite: https://github.com/pinobatch/240p-test-mini/tree/12c20f8c07f2736bb6f91b5590b9ef8bdf8cb38b
+Thwaite: https://github.com/pinobatch/thwaite-nes/tree/00e36745188bc165990f60eed6b093c3ce6ad0e3
+CodeMaster: https://github.com/DanielVukelich/Codemaster-NES-homebrew/tree/db5405b2860af7f6238dca13f398c505f4a4529d
+RoboRun NES: https://github.com/heaven-hm/roborun-nes/tree/9a515a62321938ab25063e1efdc330ae74f962ba
+
+Doom engine
+The modified MochaDOOM bridge's corresponding source is included at
+Doom/MochaDOOM-corresponding-source.tar.gz. The upstream project alone does
+not contain these KnoxBox integration changes.

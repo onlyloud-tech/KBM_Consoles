@@ -1,0 +1,91 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package com.grapeshot.halfnes.mappers;
+
+import com.grapeshot.halfnes.mappers.BadMapperException;
+import com.grapeshot.halfnes.mappers.Mapper;
+
+public class AfterburnerMapper
+extends Mapper {
+    private int bank = 0;
+    boolean useromnt = false;
+    int romnt1;
+    int romnt2;
+
+    @Override
+    public void loadrom() throws BadMapperException {
+        int n;
+        super.loadrom();
+        for (n = 0; n < 16; ++n) {
+            this.prg_map[n] = 1024 * n & this.prgsize - 1;
+        }
+        for (n = 1; n <= 16; ++n) {
+            this.prg_map[32 - n] = this.prgsize - 1024 * n;
+        }
+        for (n = 0; n < 8; ++n) {
+            this.chr_map[n] = 1024 * n & this.chrsize - 1;
+        }
+    }
+
+    @Override
+    public final void cartWrite(int n, int n2) {
+        if (n < 32768 || n > 65535) {
+            super.cartWrite(n, n2);
+            return;
+        }
+        if (n <= 36863) {
+            this.setppubank(2, 0, n2);
+        } else if (n <= 40959) {
+            this.setppubank(2, 2, n2);
+        } else if (n <= 45055) {
+            this.setppubank(2, 4, n2);
+        } else if (n <= 49151) {
+            this.setppubank(2, 6, n2);
+        } else if (n <= 53247) {
+            this.romnt1 = n2 | 0x80;
+        } else if (n <= 57343) {
+            this.romnt2 = n2 | 0x80;
+        } else if (n <= 61439) {
+            this.useromnt = (n2 & 0x10) != 0;
+            this.setmirroring((n2 & 1) != 0 ? Mapper.MirrorType.H_MIRROR : Mapper.MirrorType.V_MIRROR);
+        } else if (n <= 65535) {
+            this.bank = n2 & 0xF;
+            for (int i = 0; i < 16; ++i) {
+                this.prg_map[i] = 1024 * (i + 16 * this.bank) & this.prgsize - 1;
+            }
+        }
+    }
+
+    private void setppubank(int n, int n2, int n3) {
+        for (int i = 0; i < n; ++i) {
+            this.chr_map[i + n2] = 1024 * (n * n3 + i) % this.chrsize;
+        }
+    }
+
+    @Override
+    public int ppuRead(int n) {
+        if (n < 8192) {
+            return this.chr[this.chr_map[n >> 10] + (n & 0x3FF)];
+        }
+        switch (n & 0xC00) {
+            case 0: {
+                return this.useromnt ? this.chr[(n & 0x3FF) + this.romnt1 * 1024] : this.nt0[n & 0x3FF];
+            }
+            case 1024: {
+                return this.useromnt ? this.chr[(n & 0x3FF) + this.romnt2 * 1024] : this.nt1[n & 0x3FF];
+            }
+            case 2048: {
+                return this.useromnt ? this.chr[(n & 0x3FF) + this.romnt2 * 1024] : this.nt2[n & 0x3FF];
+            }
+        }
+        if (n >= 16128) {
+            if ((n &= 0x1F) >= 16 && (n & 3) == 0) {
+                n -= 16;
+            }
+            return this.ppu.pal[n];
+        }
+        return this.useromnt ? this.chr[(n & 0x3FF) + this.romnt1 * 1024] : this.nt3[n & 0x3FF];
+    }
+}
+

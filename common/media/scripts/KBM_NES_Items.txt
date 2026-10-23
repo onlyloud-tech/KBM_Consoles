@@ -1,0 +1,271 @@
+module KBM
+{
+    item NESConsole
+    {
+        DisplayCategory = Electronics,
+        ItemType = base:radio,
+        DisplayName = KnoxBox NES Console,
+        Icon = nesConsole,
+        StaticModel = KBM_NES_Console,
+        Weight = 0.8,
+        ConditionMax = 100,
+        UseDelta = 0.003,
+        UseWhileEquipped = FALSE,
+        DisappearOnUse = FALSE,
+        TwoWay = FALSE,
+        TransmitRange = 0,
+        MicRange = 0,
+        BaseVolumeRange = 10,
+        IsPortable = TRUE,
+        IsTelevision = FALSE,
+        MinChannel = 88000,
+        MaxChannel = 108000,
+        UsesBattery = TRUE,
+        IsHighTier = FALSE,
+        Tooltip = Tooltip_media_item_operate,
+        AcceptMediaType = 1,
+        NoTransmit = TRUE,
+        WorldStaticModel = KBM_NES_Console,
+    }
+
+    item NES240pTestSuiteCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = NES Cartridge - 240p Test Suite,
+        DisplayCategory = Entertainment,
+        Icon = nescartkbm,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_NES_240P_TEST_SUITE,
+        WorldStaticModel = KBM_NES_Cartridge_001,
+    }
+
+
+    item NESThwaiteCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = NES Cartridge - Thwaite,
+        DisplayCategory = Entertainment,
+        Icon = nescartkbm,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_NES_THWAITE,
+        WorldStaticModel = KBM_NES_Cartridge_003,
+    }
+
+    item NESCodeMasterCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = NES Cartridge - CodeMaster,
+        DisplayCategory = Entertainment,
+        Icon = nescartkbm,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_NES_CODEMASTER,
+        WorldStaticModel = KBM_NES_Cartridge_001,
+    }
+
+    item NESConcentrationRoomCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = NES Cartridge - Concentration Room,
+        DisplayCategory = Entertainment,
+        Icon = nescartkbm,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_NES_CONCENTRATION_ROOM,
+        WorldStaticModel = KBM_NES_Cartridge_002,
+    }
+
+    item NESCybercoasterCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = NES Cartridge - Cybercoaster,
+        DisplayCategory = Entertainment,
+        Icon = nescartkbm,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_NES_CYBERCOASTER,
+        WorldStaticModel = KBM_NES_Cartridge_003,
+    }
+
+    item NESFallingCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = NES Cartridge - Falling,
+        DisplayCategory = Entertainment,
+        Icon = nescartkbm,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_NES_FALLING,
+        WorldStaticModel = KBM_NES_Cartridge_001,
+    }
+
+    item NESGalaxyPatrolCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = NES Cartridge - Galaxy Patrol,
+        DisplayCategory = Entertainment,
+        Icon = nescartkbm,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_NES_GALAXY_PATROL,
+        WorldStaticModel = KBM_NES_Cartridge_002,
+    }
+
+    item NESJezNESCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = NES Cartridge - JezNES,
+        DisplayCategory = Entertainment,
+        Icon = nescartkbm,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_NES_JEZNES,
+        WorldStaticModel = KBM_NES_Cartridge_003,
+    }
+
+    item NESStarterKitCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = NES Cartridge - NES Starter Kit Adventure,
+        DisplayCategory = Entertainment,
+        Icon = nescartkbm,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_NES_STARTER_KIT,
+        WorldStaticModel = KBM_NES_Cartridge_001,
+    }
+
+    item NESGame6502Cartridge
+    {
+        ItemType = base:normal,
+        DisplayName = NES Cartridge - 6502 NES Game,
+        DisplayCategory = Entertainment,
+        Icon = nescartkbm,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_NES_NESGAME_6502,
+        WorldStaticModel = KBM_NES_Cartridge_002,
+    }
+
+    item NESOpenNESSnakeCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = NES Cartridge - openNES Snake,
+        DisplayCategory = Entertainment,
+        Icon = nescartkbm,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_NES_OPENNES_SNAKE,
+        WorldStaticModel = KBM_NES_Cartridge_003,
+    }
+
+    item NESRHDECartridge
+    {
+        ItemType = base:normal,
+        DisplayName = NES Cartridge - RHDE: Furniture Fight,
+        DisplayCategory = Entertainment,
+        Icon = nescartkbm,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_NES_RHDE,
+        WorldStaticModel = KBM_NES_Cartridge_001,
+    }
+
+    item NESRoboRunCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = NES Cartridge - RoboRun NES,
+        DisplayCategory = Entertainment,
+        Icon = nescartkbm,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_NES_ROBORUN,
+        WorldStaticModel = KBM_NES_Cartridge_002,
+    }
+
+    item NESZapRuderCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = NES Cartridge - Zap Ruder,
+        DisplayCategory = Entertainment,
+        Icon = nescartkbm,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_NES_ZAP_RUDER,
+        WorldStaticModel = KBM_NES_Cartridge_003,
+    }
+
+    item NESTableTennisCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = NES Cartridge - 8-Bit Table Tennis,
+        DisplayCategory = Entertainment,
+        Icon = nescartkbm,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_NES_TABLE_TENNIS,
+        WorldStaticModel = KBM_NES_Cartridge_001,
+    }
+
+    item DoomSharewareCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Doom Cartridge - DOOM Shareware,
+        DisplayCategory = Entertainment,
+        Icon = doomneskbm,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_NES_DOOM_SHAREWARE,
+        WorldStaticModel = KBM_NES_DoomCartridge,
+    }
+
+    item FreedoomPhase1Cartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Doom Cartridge - Freedoom: Phase 1,
+        DisplayCategory = Entertainment,
+        Icon = doomneskbm,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_NES_FREEDOOM1,
+        WorldStaticModel = KBM_NES_DoomCartridge,
+    }
+
+    item FreedoomPhase2Cartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Doom Cartridge - Freedoom: Phase 2,
+        DisplayCategory = Entertainment,
+        Icon = doomneskbm,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_NES_FREEDOOM2,
+        WorldStaticModel = KBM_NES_DoomCartridge,
+    }
+
+    item FreeDMCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Doom Cartridge - FreeDM,
+        DisplayCategory = Entertainment,
+        Icon = doomneskbm,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_NES_FREEDM,
+        WorldStaticModel = KBM_NES_DoomCartridge,
+    }
+
+    item HacXCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Doom Cartridge - HacX: Twitch 'n Kill,
+        DisplayCategory = Entertainment,
+        Icon = doomneskbm,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_NES_HACX,
+        WorldStaticModel = KBM_NES_DoomCartridge,
+    }
+}

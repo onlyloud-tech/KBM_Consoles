@@ -1,0 +1,2 @@
+https://github.com/tbsp/Adjustris
+https://github.com/gbdev/database/tree/master/entries/adjustris/adjustris.gb

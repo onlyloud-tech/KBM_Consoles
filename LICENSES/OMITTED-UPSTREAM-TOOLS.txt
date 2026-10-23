@@ -1,0 +1,25 @@
+Source snapshots are repacked as tar.gz for the Project Zomboid Workshop.
+Upstream build scripts with prohibited extensions are included as .txt files. Restore their original extensions after extracting if rebuilding the upstream project.
+
+Renamed scripts:
+LICENSES\Homebrew\bit_bang\source\hUGEDriver-source.zip: SuperDisk-hUGEDriver-0f10d49/gbdk_example/build.bat -> SuperDisk-hUGEDriver-0f10d49/gbdk_example/build.bat.txt
+LICENSES\Homebrew\bit_bang\source\hUGEDriver-source.zip: SuperDisk-hUGEDriver-0f10d49/rgbds_example/build.bat -> SuperDisk-hUGEDriver-0f10d49/rgbds_example/build.bat.txt
+LICENSES\Homebrew\bit_bang\source\hUGEDriver-source.zip: SuperDisk-hUGEDriver-0f10d49/rgbds_example/build.sh -> SuperDisk-hUGEDriver-0f10d49/rgbds_example/build.sh.txt
+LICENSES\Homebrew\geometrix\source\corresponding-source.zip: AntonioND-geometrix-295ce22/resources/convert_songs.sh -> AntonioND-geometrix-295ce22/resources/convert_songs.sh.txt
+LICENSES\NES\sources\240p_test_suite-source-12c20f8c07f2.zip: 240p-test-mini/gba/tools/get_bios.sh -> 240p-test-mini/gba/tools/get_bios.sh.txt
+LICENSES\NES\sources\240p_test_suite-source-12c20f8c07f2.zip: 240p-test-mini/nes-palpar/mk.sh -> 240p-test-mini/nes-palpar/mk.sh.txt
+LICENSES\NES\sources\roborun-source-9a515a623219.zip: roborun-nes/BuildGame.bat -> roborun-nes/BuildGame.bat.txt
+LICENSES\NES\sources\roborun-source-9a515a623219.zip: roborun-nes/Compile.bat -> roborun-nes/Compile.bat.txt
+LICENSES\NES\sources\roborun-source-9a515a623219.zip: roborun-nes/music/generate_music.bat -> roborun-nes/music/generate_music.bat.txt
+
+Third-party binary tools and nested archives omitted from the Workshop copy:
+LICENSES\NES\sources\roborun-source-9a515a623219.zip: roborun-nes/tools/FamiStudio241.zip
+LICENSES\NES\sources\roborun-source-9a515a623219.zip: roborun-nes/tools/FamiTracker-v0.4.6.zip
+LICENSES\NES\sources\roborun-source-9a515a623219.zip: roborun-nes/tools/NES Screen Tool v2.5.zip
+LICENSES\NES\sources\roborun-source-9a515a623219.zip: roborun-nes/tools/NES-Sprite-Convertor_v1.02.zip
+LICENSES\NES\sources\roborun-source-9a515a623219.zip: roborun-nes/tools/yychr.zip
+LICENSES\NES\sources\roborun-source-9a515a623219.zip: roborun-nes/utils/meta2c.exe
+LICENSES\NES\sources\roborun-source-9a515a623219.zip: roborun-nes/utils/nsf2data.exe
+LICENSES\NES\sources\roborun-source-9a515a623219.zip: roborun-nes/utils/text2data.exe
+
+The unmodified source archives remain in the local development workspace.

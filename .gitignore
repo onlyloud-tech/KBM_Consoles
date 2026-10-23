@@ -1,0 +1,22 @@
+# Local build output and packaged media do not belong in the source repository.
+build/
+dist/
+*.class
+*.jar
+*.exe
+*.dll
+*.mp4
+*.mkv
+*.gb
+*.gbc
+*.nes
+*.wad
+*.WAD
+*.png
+*.fbx
+*.blend
+*.blend1
+*.log
+*.tmp
+__pycache__/
+*.pyc

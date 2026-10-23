@@ -1,0 +1,205 @@
+module KBM
+{
+    /*  Custom static models for Game Boy handhelds.
+        Mesh: KBM_Handheld (Game-Boy-shaped box, UV-mapped front/back/sides/top/bottom).
+        One mesh, 8 per-color textures. Textures live in media/textures/KBM_GameBoy<Color>.png.
+        Referenced by each handheld item via WorldStaticModel = KBM_GameBoy_<Color>.
+    */
+
+    model KBM_GameBoy_Classic
+    {
+        mesh = WorldItems/KBM_Handheld,
+        texture = KBM_GameBoyClassic,
+        scale = 1.0,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0300 0.0750 -0.1580,
+            rotate = 35.0000 192.0000 -175.0000,
+        }
+    }
+
+    model KBM_GameBoy_Green
+    {
+        mesh = WorldItems/KBM_Handheld,
+        texture = KBM_GameBoyGreen,
+        scale = 1.0,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0300 0.0750 -0.1580,
+            rotate = 35.0000 192.0000 -175.0000,
+        }
+    }
+
+    model KBM_GameBoy_Grey
+    {
+        mesh = WorldItems/KBM_Handheld,
+        texture = KBM_GameBoyGrey,
+        scale = 1.0,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0300 0.0750 -0.1580,
+            rotate = 35.0000 192.0000 -175.0000,
+        }
+    }
+
+    model KBM_GameBoy_Red
+    {
+        mesh = WorldItems/KBM_Handheld,
+        texture = KBM_GameBoyRed,
+        scale = 1.0,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0300 0.0750 -0.1580,
+            rotate = 35.0000 192.0000 -175.0000,
+        }
+    }
+
+    model KBM_GameBoy_Yellow
+    {
+        mesh = WorldItems/KBM_Handheld,
+        texture = KBM_GameBoyYellow,
+        scale = 1.0,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0300 0.0750 -0.1580,
+            rotate = 35.0000 192.0000 -175.0000,
+        }
+    }
+
+    model KBM_GameBoy_Blue
+    {
+        mesh = WorldItems/KBM_Handheld,
+        texture = KBM_GameBoyBlue,
+        scale = 1.0,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0300 0.0750 -0.1580,
+            rotate = 35.0000 192.0000 -175.0000,
+        }
+    }
+
+    model KBM_GameBoy_Pink
+    {
+        mesh = WorldItems/KBM_Handheld,
+        texture = KBM_GameBoyPink,
+        scale = 1.0,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0300 0.0750 -0.1580,
+            rotate = 35.0000 192.0000 -175.0000,
+        }
+    }
+
+    model KBM_GameBoy_Clear
+    {
+        mesh = WorldItems/KBM_Handheld,
+        texture = KBM_GameBoyClear,
+        scale = 1.0,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0300 0.0750 -0.1580,
+            rotate = 35.0000 192.0000 -175.0000,
+        }
+    }
+
+    model KBM_GB_Cartridge
+    {
+        mesh = WorldItems/KBM_GB_Cartridge,
+        texture = gb_cart_uv,
+        scale = 0.36,
+    }
+
+    /*  Variant cartridge skins. Same mesh, different label textures.
+        Items are distributed across these 8 variants to add visual variety. */
+
+    model KBM_GB_Cartridge_001
+    {
+        mesh = WorldItems/KBM_GB_Cartridge,
+        texture = gb_cart_001,
+        scale = 0.36,
+    }
+
+    model KBM_GB_Cartridge_002
+    {
+        mesh = WorldItems/KBM_GB_Cartridge,
+        texture = gb_cart_002,
+        scale = 0.36,
+    }
+
+    model KBM_GB_Cartridge_003
+    {
+        mesh = WorldItems/KBM_GB_Cartridge,
+        texture = gb_cart_003,
+        scale = 0.36,
+    }
+
+    model KBM_GB_Cartridge_004
+    {
+        mesh = WorldItems/KBM_GB_Cartridge,
+        texture = gb_cart_004,
+        scale = 0.36,
+    }
+
+    model KBM_GB_Cartridge_005
+    {
+        mesh = WorldItems/KBM_GB_Cartridge,
+        texture = gb_cart_005,
+        scale = 0.36,
+    }
+
+    model KBM_GB_Cartridge_006
+    {
+        mesh = WorldItems/KBM_GB_Cartridge,
+        texture = gb_cart_006,
+        scale = 0.36,
+    }
+
+    model KBM_GB_Cartridge_007
+    {
+        mesh = WorldItems/KBM_GB_Cartridge,
+        texture = gb_cart_007,
+        scale = 0.36,
+    }
+
+    model KBM_GB_Cartridge_008
+    {
+        mesh = WorldItems/KBM_GB_Cartridge,
+        texture = gb_cart_008,
+        scale = 0.36,
+    }
+
+    model KBM_NES_Cartridge_001
+    {
+        mesh = WorldItems/KBM_NES_Cartridge,
+        texture = nes_cartridge_001,
+        scale = 0.5,
+    }
+
+    model KBM_NES_Cartridge_002
+    {
+        mesh = WorldItems/KBM_NES_Cartridge,
+        texture = nes_cartridge_002,
+        scale = 0.5,
+    }
+
+    model KBM_NES_Cartridge_003
+    {
+        mesh = WorldItems/KBM_NES_Cartridge,
+        texture = nes_cartridge_003,
+        scale = 0.5,
+    }
+
+    model KBM_NES_DoomCartridge
+    {
+        mesh = WorldItems/KBM_NES_Cartridge,
+        texture = KBM_NesDoom,
+        scale = 0.5,
+    }
+
+    model KBM_NES_Console
+    {
+        mesh = WorldItems/KBM_NesConsole,
+        texture = NES_CONSOLE_UV_2048,
+        scale = 0.0009,
+    }
+}

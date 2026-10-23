@@ -1,0 +1,9 @@
+name=KnoxBox Consoles
+id=KBM_Consoles
+description=Playable Game Boy, Game Boy Color, NES, and Doom systems with bundled open homebrew and BYOR support.
+modversion=1.0.0-beta
+poster=poster.png
+require=KBM_Core
+javaJarFile=../common/media/java/KBMConsolesNES.jar
+javaPkgName=com.kbmbasic
+ZBVersionMin=2.3.4

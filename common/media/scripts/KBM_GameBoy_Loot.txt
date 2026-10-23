@@ -1,0 +1,57 @@
+module KBM
+{
+    item GBCartridgeLootRoll
+    {
+        ItemType = base:normal,
+        DisplayName = Internal GB Loot Marker,
+        DisplayCategory = Entertainment,
+        Icon = gb_cartkbm,
+        Weight = 0.0,
+        Hidden = true,
+    }
+    item GBHandheldLootRoll
+    {
+        ItemType = base:radio,
+        DisplayName = Internal GB Loot Marker,
+        DisplayCategory = Electronics,
+        Icon = GBShell_Classic,
+        Weight = 0.0,
+        Hidden = true,
+    }
+    item GBCartridgeLootElectronics
+    {
+        ItemType = base:normal,
+        DisplayName = Internal GB Loot Marker,
+        DisplayCategory = Entertainment,
+        Icon = gb_cartkbm,
+        Weight = 0.0,
+        Hidden = true,
+    }
+    item GBCartridgeLootBedroom
+    {
+        ItemType = base:normal,
+        DisplayName = Internal GB Loot Marker,
+        DisplayCategory = Entertainment,
+        Icon = gb_cartkbm,
+        Weight = 0.0,
+        Hidden = true,
+    }
+    item GBHandheldLootElectronics
+    {
+        ItemType = base:radio,
+        DisplayName = Internal GB Loot Marker,
+        DisplayCategory = Electronics,
+        Icon = GBShell_Classic,
+        Weight = 0.0,
+        Hidden = true,
+    }
+    item GBHandheldLootBedroom
+    {
+        ItemType = base:radio,
+        DisplayName = Internal GB Loot Marker,
+        DisplayCategory = Electronics,
+        Icon = GBShell_Classic,
+        Weight = 0.0,
+        Hidden = true,
+    }
+}

@@ -1,0 +1,2 @@
+https://github.com/joyrider3774/waternet
+https://github.com/gbdev/database/tree/master/entries/waternet/waternet.gbc

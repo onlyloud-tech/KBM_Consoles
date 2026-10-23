@@ -1,0 +1,563 @@
+module KBM
+{
+    item GameBoyCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Game Boy Cartridge Adapter,
+        DisplayCategory = Entertainment,
+        Icon = gb_cart_001,
+        Weight = 0.1,
+        MediaCategory = VHS,
+
+        WorldStaticModel    = KBM_GB_Cartridge_001,
+    }
+
+    item GameBoyHandheldClassic
+    {
+        DisplayCategory = Electronics,
+        ItemType = base:radio,
+        DisplayName = Handheld Game Boy - Classic,
+        Icon = GBShell_Classic,
+        Weight = 0.5,
+        ConditionMax = 100,
+        UseDelta = 0.003,
+        UseWhileEquipped = FALSE,
+        DisappearOnUse = FALSE,
+        TwoWay = FALSE,
+        TransmitRange = 0,
+        MicRange = 0,
+        BaseVolumeRange = 10,
+        IsPortable = TRUE,
+        IsTelevision = FALSE,
+        MinChannel = 88000,
+        MaxChannel = 108000,
+        UsesBattery = TRUE,
+        IsHighTier = FALSE,
+        Tooltip = Tooltip_media_item_operate,
+        AcceptMediaType = 1,
+        NoTransmit = TRUE,
+
+        StaticModel         = KBM_GameBoy_Classic,
+        WorldStaticModel    = KBM_GameBoy_Classic,
+    }
+
+    item GameBoyHandheldGreen
+    {
+        DisplayCategory = Electronics,
+        ItemType = base:radio,
+        DisplayName = Handheld Game Boy - Green,
+        Icon = GBShell_Green,
+        Weight = 0.5,
+        ConditionMax = 100,
+        UseDelta = 0.003,
+        UseWhileEquipped = FALSE,
+        DisappearOnUse = FALSE,
+        TwoWay = FALSE,
+        TransmitRange = 0,
+        MicRange = 0,
+        BaseVolumeRange = 10,
+        IsPortable = TRUE,
+        IsTelevision = FALSE,
+        MinChannel = 88000,
+        MaxChannel = 108000,
+        UsesBattery = TRUE,
+        IsHighTier = FALSE,
+        Tooltip = Tooltip_media_item_operate,
+        AcceptMediaType = 1,
+        NoTransmit = TRUE,
+
+        StaticModel         = KBM_GameBoy_Green,
+        WorldStaticModel    = KBM_GameBoy_Green,
+    }
+
+    item GameBoyHandheldGrey
+    {
+        DisplayCategory = Electronics,
+        ItemType = base:radio,
+        DisplayName = Handheld Game Boy - Grey,
+        Icon = GBShell_Grey,
+        Weight = 0.5,
+        ConditionMax = 100,
+        UseDelta = 0.003,
+        UseWhileEquipped = FALSE,
+        DisappearOnUse = FALSE,
+        TwoWay = FALSE,
+        TransmitRange = 0,
+        MicRange = 0,
+        BaseVolumeRange = 10,
+        IsPortable = TRUE,
+        IsTelevision = FALSE,
+        MinChannel = 88000,
+        MaxChannel = 108000,
+        UsesBattery = TRUE,
+        IsHighTier = FALSE,
+        Tooltip = Tooltip_media_item_operate,
+        AcceptMediaType = 1,
+        NoTransmit = TRUE,
+
+        StaticModel         = KBM_GameBoy_Grey,
+        WorldStaticModel    = KBM_GameBoy_Grey,
+    }
+
+    item GameBoyHandheldRed
+    {
+        DisplayCategory = Electronics,
+        ItemType = base:radio,
+        DisplayName = Handheld Game Boy - Red,
+        Icon = GBShell_Red,
+        Weight = 0.5,
+        ConditionMax = 100,
+        UseDelta = 0.003,
+        UseWhileEquipped = FALSE,
+        DisappearOnUse = FALSE,
+        TwoWay = FALSE,
+        TransmitRange = 0,
+        MicRange = 0,
+        BaseVolumeRange = 10,
+        IsPortable = TRUE,
+        IsTelevision = FALSE,
+        MinChannel = 88000,
+        MaxChannel = 108000,
+        UsesBattery = TRUE,
+        IsHighTier = FALSE,
+        Tooltip = Tooltip_media_item_operate,
+        AcceptMediaType = 1,
+        NoTransmit = TRUE,
+
+        StaticModel         = KBM_GameBoy_Red,
+        WorldStaticModel    = KBM_GameBoy_Red,
+    }
+
+    item GameBoyHandheldYellow
+    {
+        DisplayCategory = Electronics,
+        ItemType = base:radio,
+        DisplayName = Handheld Game Boy - Yellow,
+        Icon = GBShell_Yellow,
+        Weight = 0.5,
+        ConditionMax = 100,
+        UseDelta = 0.003,
+        UseWhileEquipped = FALSE,
+        DisappearOnUse = FALSE,
+        TwoWay = FALSE,
+        TransmitRange = 0,
+        MicRange = 0,
+        BaseVolumeRange = 10,
+        IsPortable = TRUE,
+        IsTelevision = FALSE,
+        MinChannel = 88000,
+        MaxChannel = 108000,
+        UsesBattery = TRUE,
+        IsHighTier = FALSE,
+        Tooltip = Tooltip_media_item_operate,
+        AcceptMediaType = 1,
+        NoTransmit = TRUE,
+
+        StaticModel         = KBM_GameBoy_Yellow,
+        WorldStaticModel    = KBM_GameBoy_Yellow,
+    }
+
+    item GameBoyHandheldBlue
+    {
+        DisplayCategory = Electronics,
+        ItemType = base:radio,
+        DisplayName = Handheld Game Boy - Blue (Transparent),
+        Icon = GBShell_Blue,
+        Weight = 0.5,
+        ConditionMax = 100,
+        UseDelta = 0.003,
+        UseWhileEquipped = FALSE,
+        DisappearOnUse = FALSE,
+        TwoWay = FALSE,
+        TransmitRange = 0,
+        MicRange = 0,
+        BaseVolumeRange = 10,
+        IsPortable = TRUE,
+        IsTelevision = FALSE,
+        MinChannel = 88000,
+        MaxChannel = 108000,
+        UsesBattery = TRUE,
+        IsHighTier = FALSE,
+        Tooltip = Tooltip_media_item_operate,
+        AcceptMediaType = 1,
+        NoTransmit = TRUE,
+
+        StaticModel         = KBM_GameBoy_Blue,
+        WorldStaticModel    = KBM_GameBoy_Blue,
+    }
+
+    item GameBoyHandheldPink
+    {
+        DisplayCategory = Electronics,
+        ItemType = base:radio,
+        DisplayName = Handheld Game Boy - Pink (Transparent),
+        Icon = GBShell_Pink,
+        Weight = 0.5,
+        ConditionMax = 100,
+        UseDelta = 0.003,
+        UseWhileEquipped = FALSE,
+        DisappearOnUse = FALSE,
+        TwoWay = FALSE,
+        TransmitRange = 0,
+        MicRange = 0,
+        BaseVolumeRange = 10,
+        IsPortable = TRUE,
+        IsTelevision = FALSE,
+        MinChannel = 88000,
+        MaxChannel = 108000,
+        UsesBattery = TRUE,
+        IsHighTier = FALSE,
+        Tooltip = Tooltip_media_item_operate,
+        AcceptMediaType = 1,
+        NoTransmit = TRUE,
+
+        StaticModel         = KBM_GameBoy_Pink,
+        WorldStaticModel    = KBM_GameBoy_Pink,
+    }
+
+    item GameBoyHandheldClear
+    {
+        DisplayCategory = Electronics,
+        ItemType = base:radio,
+        DisplayName = Handheld Game Boy - Clear,
+        Icon = GBShell_Clear,
+        Weight = 0.5,
+        ConditionMax = 100,
+        UseDelta = 0.003,
+        UseWhileEquipped = FALSE,
+        DisappearOnUse = FALSE,
+        TwoWay = FALSE,
+        TransmitRange = 0,
+        MicRange = 0,
+        BaseVolumeRange = 10,
+        IsPortable = TRUE,
+        IsTelevision = FALSE,
+        MinChannel = 88000,
+        MaxChannel = 108000,
+        UsesBattery = TRUE,
+        IsHighTier = FALSE,
+        Tooltip = Tooltip_media_item_operate,
+        AcceptMediaType = 1,
+        NoTransmit = TRUE,
+
+        StaticModel         = KBM_GameBoy_Clear,
+        WorldStaticModel    = KBM_GameBoy_Clear,
+    }
+
+    item GB2048Cartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Game Boy Cartridge - 2048gb,
+        DisplayCategory = Entertainment,
+        Icon = gb_cart_002,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_GB_2048,
+
+        WorldStaticModel    = KBM_GB_Cartridge_002,
+    }
+
+    item GBAeviliaCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Game Boy Cartridge - Aevilia,
+        DisplayCategory = Entertainment,
+        Icon = gb_cart_003,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_GB_Aevilia,
+
+        WorldStaticModel    = KBM_GB_Cartridge_003,
+    }
+
+
+    item GBAirplanzCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Game Boy Cartridge - AIRPLANZ,
+        DisplayCategory = Entertainment,
+        Icon = gb_cart_001,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_GB_Airplanz,
+
+        WorldStaticModel    = KBM_GB_Cartridge_001,
+    }
+
+    item GBBig2smallCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Game Boy Cartridge - Big2Small,
+        DisplayCategory = Entertainment,
+        Icon = gb_cart_002,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_GB_Big2small,
+
+        WorldStaticModel    = KBM_GB_Cartridge_002,
+    }
+
+    item GBBitbangCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Game Boy Cartridge - Bit Bang,
+        DisplayCategory = Entertainment,
+        Icon = gb_cart_003,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_GB_Bitbang,
+
+        WorldStaticModel    = KBM_GB_Cartridge_003,
+    }
+
+
+    item GBDawnwillcomeCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Game Boy Cartridge - Dawn Will Come,
+        DisplayCategory = Entertainment,
+        Icon = gb_cart_004,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_GB_Dawnwillcome,
+
+        WorldStaticModel    = KBM_GB_Cartridge_004,
+    }
+
+
+    item GBGbcorpCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Game Boy Cartridge - GB Corp.,
+        DisplayCategory = Entertainment,
+        Icon = gb_cart_002,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_GB_Gbcorp,
+
+        WorldStaticModel    = KBM_GB_Cartridge_002,
+    }
+
+
+    item GBGeometrixCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Game Boy Cartridge - Geometrix,
+        DisplayCategory = Entertainment,
+        Icon = gb_cart_001,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_GB_Geometrix,
+
+        WorldStaticModel    = KBM_GB_Cartridge_001,
+    }
+
+    item GBJpgameCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Game Boy Cartridge - JP,
+        DisplayCategory = Entertainment,
+        Icon = gb_cart_003,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_GB_Jpgame,
+
+        WorldStaticModel    = KBM_GB_Cartridge_003,
+    }
+
+    item GBLibbetCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Game Boy Cartridge - Libbet and the Magic Floor,
+        DisplayCategory = Entertainment,
+        Icon = gb_cart_001,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_GB_Libbet,
+
+        WorldStaticModel    = KBM_GB_Cartridge_001,
+    }
+
+    item GBMaxpirateCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Game Boy Cartridge - Max Pirate,
+        DisplayCategory = Entertainment,
+        Icon = gb_cart_004,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_GB_Maxpirate,
+
+        WorldStaticModel    = KBM_GB_Cartridge_004,
+    }
+
+    item GBMaxpirateebCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Game Boy Cartridge - Max Pirate Extra Boom,
+        DisplayCategory = Entertainment,
+        Icon = gb_cart_001,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_GB_Maxpirateeb,
+
+        WorldStaticModel    = KBM_GB_Cartridge_001,
+    }
+
+    item GBPostbotCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Game Boy Cartridge - PostBot,
+        DisplayCategory = Entertainment,
+        Icon = gb_cart_001,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_GB_Postbot,
+
+        WorldStaticModel    = KBM_GB_Cartridge_001,
+    }
+
+    item GBReboundCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Game Boy Cartridge - Rebound,
+        DisplayCategory = Entertainment,
+        Icon = gb_cart_002,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_GB_Rebound,
+
+        WorldStaticModel    = KBM_GB_Cartridge_002,
+    }
+
+        item GBWaternetCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Game Boy Cartridge - Waternet,
+        DisplayCategory = Entertainment,
+        Icon = gb_cart_001,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_GB_Waternet,
+
+        WorldStaticModel    = KBM_GB_Cartridge_001,
+    }
+
+    item GBAdjustrisCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Game Boy Cartridge - Adjustris,
+        DisplayCategory = Entertainment,
+        Icon = gb_cart_002,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_GB_Adjustris,
+
+        WorldStaticModel    = KBM_GB_Cartridge_002,
+    }
+
+    item GBSquishyTheTurtleCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Game Boy Cartridge - Squishy the Turtle,
+        DisplayCategory = Entertainment,
+        Icon = gb_cart_003,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_GB_SquishyTheTurtle,
+
+        WorldStaticModel    = KBM_GB_Cartridge_003,
+    }
+
+    item GBSquareFallCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Game Boy Cartridge - Square Fall,
+        DisplayCategory = Entertainment,
+        Icon = gb_cart_004,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_GB_SquareFall,
+
+        WorldStaticModel    = KBM_GB_Cartridge_004,
+    }
+
+    item GBSushiNightsCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Game Boy Cartridge - Sushi Nights,
+        DisplayCategory = Entertainment,
+        Icon = gb_cart_001,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_GB_SushiNights,
+
+        WorldStaticModel    = KBM_GB_Cartridge_001,
+    }
+
+    item GBFlooderCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Game Boy Cartridge - Flooder,
+        DisplayCategory = Entertainment,
+        Icon = gb_cart_002,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_GB_Flooder,
+
+        WorldStaticModel    = KBM_GB_Cartridge_002,
+    }
+
+    item GBPongCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Game Boy Cartridge - GB Pong,
+        DisplayCategory = Entertainment,
+        Icon = gb_cart_003,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_GB_Pong,
+
+        WorldStaticModel    = KBM_GB_Cartridge_003,
+    }
+
+    item GBTobuTobuGirlCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Game Boy Cartridge - Tobu Tobu Girl,
+        DisplayCategory = Entertainment,
+        Icon = gb_cart_004,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_GB_TobuTobuGirl,
+
+        WorldStaticModel    = KBM_GB_Cartridge_004,
+    }
+
+    item GBTobuTobuGirlDeluxeCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Game Boy Cartridge - Tobu Tobu Girl Deluxe,
+        DisplayCategory = Entertainment,
+        Icon = gb_cart_001,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_GB_TobuTobuGirlDeluxe,
+
+        WorldStaticModel    = KBM_GB_Cartridge_001,
+    }
+
+    item GBSnakeCartridge
+    {
+        ItemType = base:normal,
+        DisplayName = Game Boy Cartridge - Snake,
+        DisplayCategory = Entertainment,
+        Icon = gb_cart_002,
+        Weight = 0.1,
+        MediaCategory = VHS,
+        RequiresMediaIndex = KBM_GB_Snake,
+
+        WorldStaticModel    = KBM_GB_Cartridge_002,
+    }
+
+}
